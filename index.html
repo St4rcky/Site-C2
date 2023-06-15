@@ -11,7 +11,7 @@
     <body>
         <header id="Header"><!--Début du header-->
             <div class="d-flex" id="headerPrincipal">
-                <div class="col-lg-2 col-md-3 elemHeader d-none d-md-block pt-3">
+                <div class="col-lg-2 col-md-3 d-none d-md-block pt-3">
                     <h1><strong>CLUB AUTO</strong></h1>
                 </div>
                 <div class="col-2 d-none d-md-block">
@@ -23,42 +23,158 @@
                         </address>
                     </div>
                 </div>
-                <div class="col-12 col-md-2  elemHeader">
-                    <div class="d-flex align-items-center pt-3">
+                <div class="col-md-2">
+                    <div class="d-flex align-items-center pt-3 ms-auto">
                         <img src="images/icon-telephone.png" alt="icone d'un téléphone" id="telIc">
                         <p><strong><span class="orange">TÉLÉPHONE</span></strong><br>
                         <strong>01 23 45 67 89</strong></p>
                     </div>
                 </div>
-                <div class="col-2 elemHeader d-none d-md-block">
+                <div class="col-2 d-none d-md-block">
                     <div class="d-flex align-items-center pt-3">
                         <p><strong><span class="orange">OUVERTURE</span> : Du Lundi au Samedi</strong><br>
                         <strong><span class="orange">HORAIRES</span> : De 9h à 17h</strong></p>
                     </div>
                 </div>
-                <div class="col-3 elemHeader mx-4 d-none d-md-block">
+                <div class="col-3 mx-4 d-none d-md-block">
                     <div class="d-flex align-items-center pt-3">
                         <img src="/images/facebookIcon.png" alt="icone Facebook">
                         <img src="/images/twitterIcon.png" alt="icone Twitter">
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-md" id="barreDeLien">
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse" id="contenuNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
-                    </ul>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md pt-3 pb-3" style="justify-content: flex-end">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse barreDeLien" id="contenuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
+                        </ul>
+                    </nav>
                 </nav>
-                
-            </nav>
-            <button id="menuToggle"><img src="/images/hamburgerIcon.png" alt="Ouvrir/fermer le menu"></button>
-
+            </div>
         </header><!--Fin du Header-->
+        
+        <main id="contenuPrincipal"> <!--Début du contenu principal-->
+            <div class="container-fluid ps-0 pe-0">
+                <div class="container-fluid ps-0 pe-0">
+                <img src="/images/vehicule1.jpg" alt="image d'un parc à voiture" class="d-none d-md-block img-fluid" style="width: 100%;" id="photoEnTete"/>
+                </div>
+            </div>
+            <section>
+                <h2 class="pt-3 pb-3"><strong>CLUB AUTO <span class="orange">LE MEILLEUR DE L'AUTOMOBILE</span></strong></h2>
+            </section>
+            <div id="firstPart">
+                <div>
+                    <div id="imageFirst">
+                        <img src="/images/clients.jpg" alt="image de clients heureux">
+                    </div>
+                    <div>
+                        <h3><strong>BIENVENUE CHEZ <span class="orange titre">CLUB AUTO</span></strong></h3>
+                        <p class="noir"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis id officia ea quo libero blanditiis, ad dolorem molestiae.</strong></p>
+                        <p class="gris">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo inventore eius molestias, cumque sunt architecto voluptatibus officia esse possimus totam voluptas ea? Enim facilis accusamus explicabo, dolores dignissimos mollitia saepe aliquam quaerat deserunt sed necessitatibus eius neque porro maxime a minus ipsum nam. Voluptate, eaque unde ipsum, ea illo labore quod in animi laborum eveniet error iste tenetur omnis accusamus cupiditate? Tempore nihil dolorem voluptates quaerat! Maiores cum magni architecto facilis, nulla earum sapiente atque quod.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3><strong>LE MEILLEUR DE L'AUTOMOBILE</strong></h3>
+                        <p class="gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perspiciatis possimus cumque dolorem commodi nobis maxime ullam adipisci. Recusandae similique exercitationem veritatis laborum quibusdam quos, possimus autem enim ex dolorem repellat doloremque. Corporis commodi aliquid harum modi pariatur ullam quo quasi minus assumenda id nulla excepturi voluptatibus temporibus, adipisci, veniam beatae eaque ut vero? Consectetur, ducimus ullam.</p>
+                        <ul class="listPerso">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>                    
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="/images/entretien.jpg" alt="image de nettoyage de voiture">
+                    </div>
+                </div>
+            </div>
+            <div id="section2">
+                <div id="divjaune">
+                    <h4><strong>Vous souhaitez louer ?</strong></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quia sequi provident alias culpa praesentium neque iste, deserunt quae accusantium maiores aperiam architecto blanditiis. Repudiandae velit accusamus sapiente expedita repellat. Doloribus asperiores odio molestias laudantium dolore.</p>
+                </div>
+                <div id="divrouge">
+                    <h4><strong>Vous souhaitez acheter ?</strong></h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, sapiente. Qui, enim neque ullam consequuntur quasi illo obcaecati quam totam corrupti quae voluptates aut rem quisquam inventore reiciendis deserunt nisi nostrum voluptas, eum at ut cupiditate!</p>
+                </div>
+                <div id="vehiculesrecents">
+                    <h4><strong>VEHICULES RECENTS</strong></h4>
+                        <div>
+                            <figure>
+                                <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image de la voiture en vente"></a>
+                                <figcaption>
+                                    <p><strong>BMW 5351, NAVI,</strong></p>
+                                    <p><strong>LEATHER, ABS</strong></p>
+                                    <button class="btn btn-primary">
+                                        <p class="m-0"><strong>5 500€</strong></p>
+                                    </button>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <figure>
+                                <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image de la voiture en vente"></a>
+                                <figcaption>
+                                    <p><strong>BMW 328 i, SPORT</strong></p>
+                                    <P><STRONG>LINE BODY KIT</STRONG></P>
+                                    <button class="btn btn-primary" style="background-color: #6b98e0; border: none">
+                                        <p class="m-0"><strong>5 500€</strong></p>
+                                    </button>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <figure>
+                                <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image de la voiture en vente"></a>
+                                <figcaption>
+                                    <p><strong>FORD EXPLORER 2015</strong></p>
+                                    <p><strong>4WD</strong></p>
+                                    <a href="Vehicules.html"><button>
+                                        <span><strong><del>9 000€</del></strong></span><br>
+                                        <span><strong>8 200€</strong></span>
+                                    </button></a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                </div>
+            </div>
+            <div id="lastPart">
+                <h4>Pourquoi nous choisir ?</h4>
+                <div>
+                    <img src="/images/icon1.png" alt="icone de financement">
+                    <h5>FINANCEMENT</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                </div>  
+                 <div>
+                    <img src="/images/icon2.png" alt="icone compteur">
+                    <h5>RÉACTIVITÉ DE L'ÉQUIPE TECHNIQUE</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                </div>
+                <div>
+                    <img src="/images/icon3.png" alt="icone message">
+                    <h5>A L'ÉCOUTE DE NOTRE CLIENTÈLE</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                </div>
+                <div>
+                    <img src="/images/icon4.png" alt="icone lettre">
+                    <h5>SERVICE &amp; MAINTENANCE</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                </div> 
+            </div>
+            <div>
+                <a href="Contact.html">
+                    <button><span>CONTACTEZ NOUS</span></button>
+                </a>
+            </div>  
+
     </body>
 </html>
