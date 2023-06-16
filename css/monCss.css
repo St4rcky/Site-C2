@@ -20,6 +20,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: montserrat;
     color: #232628;
 }
+.white {
+    color: #FFFFFF;
+}
 .orange {
     color: #CC6119;
     font-size: 0.8em;
@@ -79,12 +82,18 @@ section > h2 {
     margin: 0;
     padding: 1em;
 }
+.blanc {
+    color: #FFFFFF;
+}
 .noir {
     color: #000000;
     font-family: "open sans";
 }
 .gris {
     color: rgb(128, 128, 128);
+}
+.blue {
+    color: #6C98E1;
 }
 #firstPart {
     padding: 0 1.5em;
@@ -96,7 +105,7 @@ section > h2 {
     list-style: none;
 }
 .listPerso li {
-    background-image: url('/images/iconList.png');
+    background-image: url(/images/iconList.png);
     background-repeat: no-repeat;
     background-size: 15px 15px;
     padding-left: 2em;
@@ -121,7 +130,7 @@ section > h2 {
 }
 #vehiculesrecents {
     background-color: #232628;
-    padding: 0 1em;
+    padding: 0 1em 0.5em;
 }
 #vehiculesrecents h4 {
     color: #FFFFFF;
@@ -137,45 +146,75 @@ section > h2 {
     border-radius: 0;
 }
 .btn-primary {
-    background-color: #6b98e0; border: none"
+    background-color: #6b98e0;
+    border-style: none;
 }
-/*
-section img {
-    width: 1100px;
-    height: 50%;
-    object-fit: cover;
-    overflow: hidden;
+#lastPart {
+    padding: 2em;
 }
-
-
+#lastPart h4 {
+    font-size: 2em;
+    padding: 0 0 2.5em 2em;
+}
+#lastPart img {
+    width: 80px;
+}
+.btnContact {
+    border-radius: 5px;
+}
 #basPage {
     background: url(/images/vehicule3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding-top: 3em;
 }
-#divjaune2 {
-    background-color: #fab637e1;
+#divJaune2 {
+    background-color: #fab637dc;
+    padding: 3em;
+}
+#divJaune2 h5 {
+    font-size: 2em;
+    padding-bottom: 0;
+    padding-right: 2em;
+}
+#divJaune2 p {
+    padding: 0 1em 0 0;
 }
 footer {
     background-color: #232628;
 }
-footer p {
+footer p{
     color: #ECEFF3;    
 }
-.blue {
-    color: #6C98E1;
-}
+
 #finFooter {
     text-align: center;
-    border-top: solid 0.1px #ECEFF3;
+    border-top: solid 0.1px rgb(128, 128, 128);
+    padding: 1em;
 }
-.gris {
-    color: rgb(128, 128, 128);
-}
-#footer div {
+#footer {
     padding: 10%;
 }
-
-
-*/
+#footer label {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#reseauxIc img {
+    background-color: #FFFFFF;
+    margin: 0.2em;
+    margin-bottom: 2em;
+    width: 15%;
+}
+.nlForm {
+    border-radius: 0; 
+    background-color: #CC6119;
+    border: none;
+}
+.nlForm img {
+    background-color: #CC6119; 
+    width: auto;
+}
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;
