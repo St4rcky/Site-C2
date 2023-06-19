@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Club auto, le meilleur de l'automobile pour la vente et la location de vehicule">
         <title>Club auto</title>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,19 +70,19 @@
             <section>
                 <h2 class="pt-3 pb-3"><strong>CLUB AUTO <span class="orange">LE MEILLEUR DE L'AUTOMOBILE</span></strong></h2>
             </section>
-            <div id="firstPart">
-                <div>
-                    <div id="imageFirst">
+            <div class="container-fluid" id="firstPart">
+                <div class="row">
+                    <div class="col-md-6">
                         <img src="/images/clients.jpg" alt="image de clients heureux">
                     </div>
-                    <div>
+                    <div class="col-md-6">
                         <h3><strong>BIENVENUE CHEZ <span class="orange titre">CLUB AUTO</span></strong></h3>
                         <p class="noir"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis id officia ea quo libero blanditiis, ad dolorem molestiae.</strong></p>
                         <p class="gris">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo inventore eius molestias, cumque sunt architecto voluptatibus officia esse possimus totam voluptas ea? Enim facilis accusamus explicabo, dolores dignissimos mollitia saepe aliquam quaerat deserunt sed necessitatibus eius neque porro maxime a minus ipsum nam. Voluptate, eaque unde ipsum, ea illo labore quod in animi laborum eveniet error iste tenetur omnis accusamus cupiditate? Tempore nihil dolorem voluptates quaerat! Maiores cum magni architecto facilis, nulla earum sapiente atque quod.</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="row separation">
+                    <div class="col-md-6">
                         <h3><strong>LE MEILLEUR DE L'AUTOMOBILE</strong></h3>
                         <p class="gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perspiciatis possimus cumque dolorem commodi nobis maxime ullam adipisci. Recusandae similique exercitationem veritatis laborum quibusdam quos, possimus autem enim ex dolorem repellat doloremque. Corporis commodi aliquid harum modi pariatur ullam quo quasi minus assumenda id nulla excepturi voluptatibus temporibus, adipisci, veniam beatae eaque ut vero? Consectetur, ducimus ullam.</p>
                         <ul class="listPerso">
@@ -92,106 +93,120 @@
                             <li>Lorem ipsum dolor sit amet</li>                    
                         </ul>
                     </div>
-                    <div>
+                    <div class="col-md-6">
                         <img src="/images/entretien.jpg" alt="image de nettoyage de voiture">
                     </div>
                 </div>
             </div>
-            <div id="section2">
-                <div id="divjaune">
-                    <h4><strong>Vous souhaitez louer ?</strong></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quia sequi provident alias culpa praesentium neque iste, deserunt quae accusantium maiores aperiam architecto blanditiis. Repudiandae velit accusamus sapiente expedita repellat. Doloribus asperiores odio molestias laudantium dolore.</p>
-                </div>
-                <div id="divrouge">
-                    <h4><strong>Vous souhaitez acheter ?</strong></h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, sapiente. Qui, enim neque ullam consequuntur quasi illo obcaecati quam totam corrupti quae voluptates aut rem quisquam inventore reiciendis deserunt nisi nostrum voluptas, eum at ut cupiditate!</p>
+            <div class="container-fluid" id="section2">
+                <div class="row justify-content-center" id="colorPart">
+                    <div class="col-md-5 mx-5" id="divjaune">
+                        <h4><strong>Vous souhaitez louer ?</strong></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, sapiente. Qui, enim neque ullam consequuntur quasi illo obcaecati quam totam corrupti quae voluptates aut rem quisquam inventore reiciendis deserunt nisi nostrum voluptas, eum at ut cupiditate!</p>
+                    </div>
+                    <div class="col-md-5" id="divrouge">
+                        <h4><strong>Vous souhaitez acheter ?</strong></h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, sapiente. Qui, enim neque ullam consequuntur quasi illo obcaecati quam totam corrupti quae voluptates aut rem quisquam inventore reiciendis deserunt nisi nostrum voluptas, eum at ut cupiditate!</p>
+                    </div>
                 </div>
                 <div id="vehiculesrecents">
+                    <div class="container-fluid">
+                        <div class="row">
                     <h4><strong>VEHICULES RECENTS</strong></h4>
-                        <div>
-                            <figure>
+                        <div class="col-md-4">
+                            <figure class="py-4">
                                 <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image de la voiture en vente"></a>
-                                <figcaption>
+                                <figcaption class="d-flex justify-content-between">
+                                    <div>
                                     <p><strong>BMW 5351, NAVI,</strong></p>
                                     <p><strong>LEATHER, ABS</strong></p>
+                                    </div>
                                     <button class="btn btn-primary">
                                         <p class="m-0"><strong>5 500€</strong></p>
                                     </button>
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="d-none d-md-block">
-                            <figure>
+                        <div class="d-none d-md-block col-md-4">
+                            <figure class="py-4">
                                 <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image de la voiture en vente"></a>
-                                <figcaption>
-                                    <p><strong>BMW 328 i, SPORT</strong></p>
-                                    <P><STRONG>LINE BODY KIT</STRONG></P>
+                                <figcaption class="d-flex justify-content-between">
+                                    <div>
+                                        <p><strong>BMW 328 i, SPORT</strong></p>
+                                        <P><STRONG>LINE BODY KIT</STRONG></P>
+                                    </div>
                                     <button class="btn btn-primary">
                                         <p class="m-0"><strong>5 500€</strong></p>
                                     </button>
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="d-none d-md-block">
-                            <figure>
+                        <div class="d-none d-md-block col-md-4">
+                            <figure class="py-4">
                                 <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image de la voiture en vente"></a>
-                                <figcaption>
+                                <figcaption class="d-flex justify-content-between">
                                     <p><strong>FORD EXPLORER 2015</strong></p>
                                     <p><strong>4WD</strong></p>
-                                    <button class="btn btn-primary">
-                                        <p class="m-0"><strong><del>9 000€</del></strong></p><br>
+                                    <button class="btn btn-primary boutonDouble">
+                                        <p class="m-0"><del>9 000€</del></p>
                                         <p><strong>8 200€</strong></p>
                                 </figcaption>
                             </figure>
                         </div>
+                    </div>
+                    </div>
                 </div>
             </div>
             <div class="container" id="lastPart">
-                <h4><strong>Pourquoi nous choisir ?</strong></h4>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="/images/icon1.png" alt="icone de financement">
+                <h4 class="col-md-6 offset-md-4" ><strong>Pourquoi nous choisir ?</strong></h4>
+                <div class="row g-5">
+                    <div class="row col-md-3">
+                        <div class="col-4">
+                            <img src="/images/icon1.png" alt="icone de financement">
+                        </div>
+                        <div class="col-8 ps-0">
+                            <h5><strong>FINANCEMENT</strong></h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                        </div>
+                    </div>  
+                    <div class="row col-md-3 py-5 py-md-0">
+                        <div class="col-4">
+                            <img src="/images/icon2.png" alt="icone compteur">
+                        </div>
+                        <div class="col-8 ps-0">
+                            <h5><strong>RÉACTIVITÉ DE L'ÉQUIPE TECHNIQUE</strong></h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                        </div>
                     </div>
-                    <div class="col-8 ps-0">
-                        <h5><strong>FINANCEMENT</strong></h5>
-                        <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                    <div class="row col-md-3 py-5 py-md-0">
+                        <div class="col-4">
+                            <img src="/images/icon3.png" alt="icone message">
+                        </div>
+                        <div class="col-8 ps-0">
+                            <h5><strong>A L'ÉCOUTE DE NOTRE CLIENTÈLE</strong></h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                        </div>
                     </div>
-                </div>  
-                <div class="row py-5">
-                    <div class="col-4">
-                        <img src="/images/icon2.png" alt="icone compteur">
+                    <div class="row col-md-3 py-5 py-md-0">
+                        <div class="col-4">
+                            <img src="/images/icon4.png" alt="icone lettre">
+                        </div>
+                        <div class="col-8 ps-0">
+                            <h5><strong>SERVICE &amp; MAINTENANCE</strong></h5>
+                            <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                        </div>                
                     </div>
-                    <div class="col-8 ps-0">
-                        <h5><strong>RÉACTIVITÉ DE L'ÉQUIPE TECHNIQUE</strong></h5>
-                        <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
+                    <div class="mx-5">
+                    <div class="btn btn-primary text-center btnContact">
+                        <a href="#">
+                        <p class="m-3"><strong>CONTACTEZ NOUS</strong></p>
+                        </a>
+                    </div>
                     </div>
                 </div>
-                <div class="row py-5">
-                    <div class="col-4">
-                        <img src="/images/icon3.png" alt="icone message">
-                    </div>
-                    <div class="col-8 ps-0">
-                        <h5><strong>A L'ÉCOUTE DE NOTRE CLIENTÈLE</strong></h5>
-                        <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
-                    </div>
-                </div>
-                <div class="row py-5">
-                    <div class="col-4">
-                        <img src="/images/icon4.png" alt="icone lettre">
-                    </div>
-                    <div class="col-8 ps-0">
-                        <h5><strong>SERVICE &amp; MAINTENANCE</strong></h5>
-                        <p class="gris">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur perferendis perspiciatis repellat, optio fugit eius amet quo libero autem.</p>
-                    </div>                
-                </div>
-                <div class="mx-5">
-                <button class="btn btn-primary btnContact">
-                    <p class="m-3"><strong>CONTACTEZ NOUS</strong></p>
-                </button>
-                </div> 
             </div> 
             <div id="basPage" class="container-fluid">
-                <div id="divJaune2">
+                <div class="col-md-6 col-lg-5 offset-md-2" id="divJaune2">
                     <h5><strong>CLUB AUTO<br>
                     <span class="white">VENTE ET LOCATION</span></strong></h5>
                     <p class="noir">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptate ullam obcaecati eaque molestiae consequuntur quas tempore aliquid! Ipsa mollitia rerum necessitatibus, cum dolorem, sit alias asperiores molestias, natus dolore debitis libero voluptatum quia facilis nulla.</p>
@@ -201,34 +216,43 @@
 
         <footer id="footer"> <!--Début du footer-->
             <div>
-                <h6 class="blanc"><strong><span class="blue">CLUB</span> AUTO</strong></h6>
-                <p class="gris pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ut, labore enim perferendis consequatur adipisci consequuntur molestiae quibusdam rem.</p>  
-                <h6 class="blanc pt-2"><strong>HORAIRE D'OUVERTURE</strong></h6>
-                <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
-                <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</p>               
-                <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
-                <div class="form-group">
-                    <div class="input-group">
-                      <input type="text" class="form-control pt-1" placeholder="Entrez votre email"/>
-                      <div class="input-group-append"> 
-                      <span class="input-group-text nlForm">
-                        <img src="/images/newsletterIcon.png" alt="Icone de wifi"/>
-                      </span>
-                      </div>
+                <div>
+                    <h6 class="blanc"><strong><span class="blue">CLUB</span> AUTO</strong></h6>
+                    <p class="gris pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ut, labore enim perferendis consequatur adipisci consequuntur molestiae quibusdam rem.</p>  
+                </div>
+                <div>
+                    <h6 class="blanc pt-2"><strong>HORAIRE D'OUVERTURE</strong></h6>
+                    <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
+                    <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</p>               
+                </div>
+                <div>
+                    <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
+                    <div class="form-group">
+                        <div class="input-group">
+                        <input type="text" class="form-control pt-1" placeholder="Entrez votre email"/>
+                        <div class="input-group-append"> 
+                        <span class="input-group-text nlForm">
+                            <img src="/images/newsletterIcon.png" alt="Icone de wifi"/>
+                        </span>
+                        </div>
+                        </div>
+                    </div>
+                    <!--<input type="text" name="newsletter" id="newsletter" required placeholder="Entrez votre email" title="Entrez votre email">-->
+                    <p class="gris">Inscrivez-vous pour recevoir les dernières offres</p>
+                </div>
+                <div>
+                    <h6 class="blanc"><strong>RESEAUX SOCIAUX</strong></h6>
+                    <div id="reseauxIc">
+                        <img src="/images/facebookCarre.png" alt="Icone footer de facebook">
+                        <img src="/images/twitterCarre.png" alt="Icone footer de facebook">
+                        <img src="/images/instagramIcon.png" alt="Icone d'instagram">
+                        <img src="/images/googleIcon.png" alt="Icone de google+">
+                        <img src="/images/youtubeIcon.png" alt="Icone de Youtube">
                     </div>
                 </div>
-                <!--<input type="text" name="newsletter" id="newsletter" required placeholder="Entrez votre email" title="Entrez votre email">-->
-                <p class="gris">Inscrivez-vous pour recevoir les dernières offres</p>
-                <h6 class="blanc"><strong>RESEAUX SOCIAUX</strong></h6>
-                <div id="reseauxIc">
-                    <img src="/images/facebookCarre.png" alt="Icone footer de facebook">
-                    <img src="/images/twitterCarre.png" alt="Icone footer de facebook">
-                    <img src="/images/instagramIcon.png" alt="Icone d'instagram">
-                    <img src="/images/googleIcon.png" alt="Icone de google+">
-                    <img src="/images/youtubeIcon.png" alt="Icone de Youtube">
-                </div>
-                <p id="finFooter" class="gris">Copyright &copy; Club Auto - Tous droits réservés</p>
             </div>
+            <p id="finFooter" class="gris">Copyright &copy; Club Auto - Tous droits réservés</p>
+            
         </footer> <!--Fin du footer-->
     </body>
 </html>

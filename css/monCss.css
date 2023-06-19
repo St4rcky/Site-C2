@@ -96,10 +96,10 @@ section > h2 {
     color: #6C98E1;
 }
 #firstPart {
-    padding: 0 1.5em;
+    padding: 3em 3em;
 }
-#imageFirst {
-    padding: 3em 0 1em 0;
+.separation {
+    padding-top: 1.5em;
 }
 .listPerso {
     list-style: none;
@@ -111,14 +111,16 @@ section > h2 {
     padding-left: 2em;
     padding-bottom: 10px; 
 }
-#section2 {
+#colorPart {
     background: url(/images/vente-location.jpg) ;
-    background-repeat: no-repeat;
-    margin-top: 2em;
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    min-height: 500px;
 }
 #divjaune {
     background-color: #fab637e1;
-    padding: 20%;
+    padding: 3em;
     margin-bottom: 2em;
 }
 #divjaune h4, #divrouge h4 {
@@ -126,21 +128,35 @@ section > h2 {
 }
 #divrouge {
     background-color: #ff4848e1;
-    padding: 20%;
+    padding: 3em;
+    margin-bottom: 2em;
 }
 #vehiculesrecents {
     background-color: #232628;
     padding: 0 1em 0.5em;
+    margin-right: -12px;
+    margin-left: -12px;
 }
 #vehiculesrecents h4 {
     color: #FFFFFF;
-    padding: 2em;
+    padding: 1em;
     padding-bottom: 0.5em;
     font-size: 2.5em;
     border-bottom: solid 3px #CC6119;
+    text-align: center;
 }
 #vehiculesrecents figure {
     padding-top: 2em;
+}
+#vehiculesrecents button {
+    max-height: 3em;
+}
+#vehiculesrecents button del {
+    color: #000000;
+    font-size: 0.9em;
+}
+.boutonDouble {
+    max-height: 3.4em !important;
 }
 .btn {
     border-radius: 0;
@@ -204,7 +220,7 @@ footer p{
     background-color: #FFFFFF;
     margin: 0.2em;
     margin-bottom: 2em;
-    width: 15%;
+    width: 3em;
 }
 .nlForm {
     border-radius: 0; 
@@ -215,12 +231,34 @@ footer p{
     background-color: #CC6119; 
     width: auto;
 }
+a {
+    text-decoration: none;
+}
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;
     }
     #Header #headerPrincipal h1 {
         padding-left: 0em;
+    }
+    #divrouge, #divjaune {
+        margin-bottom: 11em;
+    }
+    .btnContact {
+        margin: 0 35% 0 35%
+    }
+    #footer {
+        padding: 1em 3em 1em 3em;
+    }
+    #footer>div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #footer>div>div {
+        padding: 2em;    
+    }
+    #footer label {
+        padding: 0 0 1em 0;
     }
 
 }
@@ -229,3 +267,4 @@ footer p{
         padding: 0 0 0 11.5%;
     }
 }
+
