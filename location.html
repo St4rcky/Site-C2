@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Club auto, le meilleur de l'automobile pour la vente et la location de vehicule">
+        <title>Club auto</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/monCss.css">
+        <script src="/js/bootstrap.bundle.min.js" defer></script>
+    </head>
+    <body>
+        <header id="Header"><!--Début du header-->
+            <div class="d-flex" id="headerPrincipal">
+                <div class="col-lg-2 col-md-3 d-none d-md-block pt-3">
+                    <h1><strong>CLUB AUTO</strong></h1>
+                </div>
+                <div class="col-2 d-none d-md-block">
+                    <div class="d-flex align-items-center pt-2">
+                        <img src="images/IconeAdresse.png" alt="icone de l'adresse" id="adressIc">
+                        <address class="headerText"><strong><span class="orange">ADRESSE :</span></strong><br>
+                        AVENUE CHARLES DE GAULLE<br>
+                        75000 PARIS
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="d-flex align-items-center pt-3 ms-auto">
+                        <img src="images/icon-telephone.png" alt="icone d'un téléphone" id="telIc">
+                        <p><strong><span class="orange">TÉLÉPHONE</span></strong><br>
+                        <strong>01 23 45 67 89</strong></p>
+                    </div>
+                </div>
+                <div class="col-2 d-none d-md-block">
+                    <div class="d-flex align-items-center pt-3">
+                        <p><strong><span class="orange">OUVERTURE</span> : Du Lundi au Samedi</strong><br>
+                        <strong><span class="orange">HORAIRES</span> : De 9h à 17h</strong></p>
+                    </div>
+                </div>
+                <div class="col-3 mx-4 d-none d-md-block">
+                    <div class="d-flex align-items-center pt-3">
+                        <img src="/images/facebookIcon.png" alt="icone Facebook">
+                        <img src="/images/twitterIcon.png" alt="icone Twitter">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md pt-3 pb-3" style="justify-content: flex-end">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse barreDeLien" id="contenuNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </div>
+        </header><!--Fin du Header-->
+        
+        <main id="contenuPrincipal"><!--Début du contenu principal-->
+            <img src="/images/vente-location.jpg" alt="image d'un client en attente">    
+            <h2><strong>LOCATION</strong></h2>
+                <section><!--Contenu de gauche de la page-->
+                    <label for="tri">ORDRE : </label> 
+                    <select name="tri" id="tri">
+                        <option value="Prix croissant">Prix croissant</option>
+                        <option value="Prix décroissant">Prix décroissant</option>
+                    </select>
+                    <div>
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption>
+                                <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                <!--Ajouter le bouton 20€/jour-->
+                            </figcaption>
+                        </figure>
+                    </div>   
+                    <div>
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption>
+                                <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                <!--Ajouter le bouton 20€/jour-->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption>
+                                <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                <!--Ajouter le bouton 20€/jour-->
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption>
+                                <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                <!--Ajouter le bouton 20€/jour-->
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section><!--Fin du contenu de gauche-->
+                <aside><!--Partie recherche de droite de la page-->
+                    <div>
+                        <img src="/images/icone-voiture.png" alt="incone de la recherche voiture"> 
+                        <p>Rechercher</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <select name="type" id="type">
+                                <option value="Type">Type</option>
+                                <option value="Essence">Manuelle</option>
+                                <option value="Diesel">Automatique</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="carburant" id="carburant">
+                                <option value="Carburant">Carburant</option>
+                                <option value="Essence">Essence</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Électrique">Électrique</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="marque" id="marque">
+                                <option value="Marque">Marque</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Audi">Audi</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="modele" id="modele">
+                                <option value="Modèle">Modèle</option>
+                                <option value="3008">3008</option>
+                                <option value="208">208</option>
+                                <option value="Clio">Clio</option>
+                                <option value="Megane">Megane</option>
+                                <option value="Golf">Golf</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="kilomètre" id="kilomètre">
+                                <option value="Kilométrage maximal">Kilométrage maximal</option>
+                                <option value="10000">10000</option>
+                                <option value="30000">30000</option>
+                                <option value="50000">50000</option>
+                                <option value="100000">100000</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="ancienneté" id="ancienneté">
+                                <option value="Ancienneté">Ancienneté</option>
+                                <option value="1 an">1 an</option>
+                                <option value="3 ans">3 ans</option>
+                                <option value="5 ans">5 ans</option>
+                                <option value="10 ans">10 ans</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <!--Ajouter la barre de filtre + le bouton reinitialiser-->
+                </aside><!--Fin de la partie recherche-->
+        </main><!--Fin du contenu principal-->    
+        
+        <footer id="footer"> <!--Début du footer-->
+            <div>
+                <div>
+                    <h6 class="blanc"><strong><span class="blue">CLUB</span> AUTO</strong></h6>
+                    <p class="gris pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ut, labore enim perferendis consequatur adipisci consequuntur molestiae quibusdam rem.</p>  
+                </div>
+                <div>
+                    <h6 class="blanc pt-2"><strong>HORAIRE D'OUVERTURE</strong></h6>
+                    <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
+                    <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</p>               
+                </div>
+                <div>
+                    <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
+                    <div class="form-group">
+                        <div class="input-group">
+                        <input type="text" class="form-control pt-1" placeholder="Entrez votre email"/>
+                        <div class="input-group-append"> 
+                        <span class="input-group-text nlForm">
+                            <img src="/images/newsletterIcon.png" alt="Icone de wifi"/>
+                        </span>
+                        </div>
+                        </div>
+                    </div>
+                    <!--<input type="text" name="newsletter" id="newsletter" required placeholder="Entrez votre email" title="Entrez votre email">-->
+                    <p class="gris">Inscrivez-vous pour recevoir les dernières offres</p>
+                </div>
+                <div>
+                    <h6 class="blanc"><strong>RESEAUX SOCIAUX</strong></h6>
+                    <div id="reseauxIc">
+                        <img src="/images/facebookCarre.png" alt="Icone footer de facebook">
+                        <img src="/images/twitterCarre.png" alt="Icone footer de facebook">
+                        <img src="/images/instagramIcon.png" alt="Icone d'instagram">
+                        <img src="/images/googleIcon.png" alt="Icone de google+">
+                        <img src="/images/youtubeIcon.png" alt="Icone de Youtube">
+                    </div>
+                </div>
+            </div>
+            <p id="finFooter" class="gris">Copyright &copy; Club Auto - Tous droits réservés</p>
+            
+        </footer> <!--Fin du footer-->
+    </body>
+</html>
