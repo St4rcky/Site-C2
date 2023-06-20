@@ -267,7 +267,21 @@ a {
     padding: 1em 3em; 
     margin-bottom: 2em;
 }
-
+#location {
+    background-image: url(/images/vente-location-sombre.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10em;
+}
+#location>h2 {
+    color: #000000;
+    font-size: 3em;
+    margin-left: -2.8em;
+    filter: invert(1);
+}
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;
@@ -293,6 +307,9 @@ a {
     }
     #footer label {
         padding: 0 0 1em 0;
+    }
+    #location>h2 {
+        margin-left: 0;
     }
 
 }
