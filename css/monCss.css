@@ -282,6 +282,55 @@ a {
     margin-left: -2.8em;
     filter: invert(1);
 }
+.iconCar {
+    width: auto; 
+    height: 3em;
+}
+#cadreRecherche {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: -2em 0em 3em 1em;
+    max-width: 90%;
+}
+#cadreRecherche>div {
+    background-color: #232628;
+}
+#cadreRecherche>div>img {
+    margin: 2em 1em 0.5em 2em;
+}
+#cadreRecherche>div>p {
+    margin: 1.5em 1em 0 0em; 
+    font-size: 1.5em;
+}
+#cadreRecherche ul {
+    list-style: none;
+}
+#cadreRecherche ul li {
+    padding: 1em;
+}
+#cadreRecherche select {
+    padding: 0.8em;
+    width: 15em;
+    border-radius: 0;
+    border: 0;
+}
+#cadreRecherche>p {
+    font-size: 1.5em;
+    padding-left: 2em;
+}
+#tri {
+    padding: 0.6em;
+    border-radius: 0;
+    border: 0;
+    margin: 1em;
+}
+#choix {
+    border-bottom: solid 1px #bbbaba;
+    margin: 0 0em;
+}
+#choix>label {
+    margin: 1em;
+}
+
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;

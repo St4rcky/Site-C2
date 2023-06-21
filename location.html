@@ -51,9 +51,9 @@
                     </button>
                     <nav class="collapse navbar-collapse barreDeLien" id="contenuNav">
                         <ul class="navbar-nav ms-auto">
-                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
-                            <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
+                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
                         </ul>
                     </nav>
@@ -65,61 +65,10 @@
             <div id="location">
                 <h2><strong>LOCATION</strong></h2>
             </div>
-            <section><!--Contenu de gauche de la page-->
-                <label for="tri">ORDRE : </label> 
-                <select name="tri" id="tri">
-                    <option value="Prix croissant">Prix croissant</option>
-                    <option value="Prix décroissant">Prix décroissant</option>
-                </select>
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>   
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>
-            </section><!--Fin du contenu de gauche-->
-            <aside><!--Partie recherche de droite de la page-->
-                <div>
-                    <img src="/images/icone-voiture.png" alt="incone de la recherche voiture"> 
-                    <p>Rechercher</p>
+            <aside id="cadreRecherche" class="container"><!--Partie recherche de droite de la page-->
+                <div class="row">
+                        <img class="col-4 iconCar" src="/images/icone-voiture.png" alt="incone de la recherche voiture"> 
+                        <p class="col-6"><strong>Rechercher</strong></p>
                 </div>
                 <ul>
                     <li>
@@ -175,8 +124,67 @@
                         </select>
                     </li>
                 </ul>
+                <p class="noir"><strong>Prix</strong></p>
+                    
+                
                 <!--Ajouter la barre de filtre + le bouton reinitialiser-->
             </aside><!--Fin de la partie recherche-->
+            <section><!--Contenu de gauche de la page-->
+                <div id="choix">
+                <label class="d-none d-md-block" for="tri">ORDRE : </label> 
+                <select name="tri" id="tri">
+                    <option value="Prix croissant">Prix croissant</option>
+                    <option value="Prix décroissant">Prix décroissant</option>
+                </select>
+                </div>
+                <div style="margin: 1em">
+                <div>
+                    <figure>
+                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                        <figcaption>
+                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                            <!--Ajouter le bouton 20€/jour-->
+                        </figcaption>
+                    </figure>
+                </div>   
+                <div>
+                    <figure>
+                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                        <figcaption>
+                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                            <!--Ajouter le bouton 20€/jour-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                        <figcaption>
+                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                            <!--Ajouter le bouton 20€/jour-->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                        <figcaption>
+                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                            <!--Ajouter le bouton 20€/jour-->
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            </section><!--Fin du contenu de gauche-->
+           
         </main><!--Fin du contenu principal-->    
         
         <footer id="footer"> <!--Début du footer-->
