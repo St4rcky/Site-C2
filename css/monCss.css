@@ -260,7 +260,7 @@ a {
     margin-top: -10em; 
     margin-bottom: 3em ; 
     background-color: #ffffff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);"
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
 }
 .btnForm {
     border-radius: 3px; 
@@ -313,9 +313,19 @@ a {
     border-radius: 0;
     border: 0;
 }
-#cadreRecherche>p {
+#cadreRecherche>label {
     font-size: 1.5em;
     padding-left: 2em;
+}
+#cadreRecherche>input {
+    padding: 1em 9em 2em 2em;
+}
+#cadreRecherche>button {
+    border-radius: 3px;
+    text-transform : uppercase;
+    margin: 1em 2em 1em 4em;
+    padding: 1em 3em;
+    font-size: 1.1em;
 }
 #tri {
     padding: 0.6em;
@@ -330,7 +340,13 @@ a {
 #choix>label {
     margin: 1em;
 }
-
+.listCar figure img {
+    margin-bottom: 2em;
+}
+.buttonPrice {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;

@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Club auto, le meilleur de l'automobile pour la vente et la location de vehicule">
         <title>Club auto</title>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -124,8 +124,9 @@
                         </select>
                     </li>
                 </ul>
-                <p class="noir"><strong>Prix</strong></p>
-                    
+                <label for="customRange1" class="form-label"><strong>Prix</strong></label>
+                <input type="range" class="form-range" id="customRange1">
+                <button class="btn btn-primary"><strong>réinitialiser</strong></button>  
                 
                 <!--Ajouter la barre de filtre + le bouton reinitialiser-->
             </aside><!--Fin de la partie recherche-->
@@ -137,52 +138,60 @@
                     <option value="Prix décroissant">Prix décroissant</option>
                 </select>
                 </div>
-                <div style="margin: 1em">
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>   
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
+                <div style="margin: 2em 2em 1em 1em">
+                    <div class="listCar">
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption class="container">
+                                <div class="row">
+                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>   
+                    <div class="listCar">
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption class="container">
+                                <div class="row">   
+                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                </div> 
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="listCar">
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption class="container">
+                                <div class="row">   
+                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                </div>
+                                </figcaption>
+                        </figure>
+                    </div>
+                    <div class="listCar">
+                        <figure>
+                            <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                            <figcaption class="container">
+                                <div class="row">   
+                                    <h3 class="col-6"><strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure>
-                        <a href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                        <figcaption>
-                            <h3><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                            <a href="Vehicules.html"><p>&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                            <!--Ajouter le bouton 20€/jour-->
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
             </section><!--Fin du contenu de gauche-->
            
         </main><!--Fin du contenu principal-->    
@@ -196,16 +205,16 @@
                 <div>
                     <h6 class="blanc pt-2"><strong>HORAIRE D'OUVERTURE</strong></h6>
                     <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
-                    <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</p>               
+                    <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</span></p>               
                 </div>
                 <div>
                     <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
                     <div class="form-group">
                         <div class="input-group">
-                        <input type="text" class="form-control pt-1" placeholder="Entrez votre email"/>
+                        <input id="newsletter" type="text" class="form-control pt-1" placeholder="Entrez votre email">
                         <div class="input-group-append"> 
                         <span class="input-group-text nlForm">
-                            <img src="/images/newsletterIcon.png" alt="Icone de wifi"/>
+                            <img src="/images/newsletterIcon.png" alt="Icone de wifi">
                         </span>
                         </div>
                         </div>
