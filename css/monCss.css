@@ -288,7 +288,7 @@ a {
 }
 #cadreRecherche {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin: -2em 0em 3em 1em;
+    margin: -2em auto 3em auto;
     max-width: 90%;
 }
 #cadreRecherche>div {
@@ -345,8 +345,11 @@ a {
 }
 .buttonPrice {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
+
+
+
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;
@@ -376,11 +379,14 @@ a {
     #location>h2 {
         margin-left: 0;
     }
-
+    #cadreRecherche {
+        position: absolute;
+        right: 5em;
+        max-width: 21em;
+    }
 }
 @media screen and (min-width: 1786px){
     #headerPrincipal {
         padding: 0 0 0 11.5%;
     }
 }
-
