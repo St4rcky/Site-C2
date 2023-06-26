@@ -347,8 +347,43 @@ a {
     font-size: 1.5em;
     margin-bottom: 3em;
 }
-
-
+#filArianne {
+    border-bottom: solid 1px rgb(128, 128, 128);
+    margin: 1em;
+}
+#filArianne a {
+    color: rgb(128, 128, 128) ;
+}
+#description h2 {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 2em;
+}
+#description figure {
+    margin: 1em;    
+}
+#description h2 {
+    margin-left: 0.5em;
+}
+#onglet ul {
+    margin-top: 2em;
+}
+#onglet ul li {
+    background-color: #232628; 
+    padding-bottom: 2em;
+}
+#onglet ul li:first-of-type {
+    background-color: #ffffff; 
+    border-top: solid 4px #CC6119;
+}
+#onglet ul li:first-of-type a {
+    color: #000000;
+}
+#onglet ul li a {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em;
+}
 
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
