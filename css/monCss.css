@@ -365,24 +365,46 @@ a {
 #description h2 {
     margin-left: 0.5em;
 }
-#onglet ul {
+#onglet .ongletDesc {
     margin-top: 2em;
 }
-#onglet ul li {
+#onglet .ongletDesc li {
     background-color: #232628; 
     padding-bottom: 2em;
 }
-#onglet ul li:first-of-type {
+#onglet .ongletDesc li:first-of-type {
     background-color: #ffffff; 
     border-top: solid 4px #CC6119;
 }
-#onglet ul li:first-of-type a {
+#onglet .ongletDesc li:first-of-type a {
     color: #000000;
 }
-#onglet ul li a {
+#onglet .ongletDesc li a {
     color: #FFFFFF;
     text-align: center;
     padding: 1em;
+}
+#textDesc {
+    margin-top: 3em;
+}
+#textDesc p:first-of-type{
+    font-size: 1.5em;
+}
+#textDesc blockquote {
+    padding-left: 2em;
+    padding-right: 3em;
+    border-left: solid 0.4em #CC6119;
+}
+#textDesc ul {
+    padding: 1em 0 1em 0.2em;
+}
+#textDesc li {
+    background-image: url(/images/iconList.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    padding-left: 2em;
+    padding-bottom: 10px; 
+    list-style: none;
 }
 
 @media screen and (min-width: 768px){
@@ -391,6 +413,9 @@ a {
     }
     #Header #headerPrincipal h1 {
         padding-left: 0em;
+    }
+    #firstPart {
+        max-width: 80%;
     }
     #divrouge, #divjaune {
         margin-bottom: 11em;
@@ -418,6 +443,12 @@ a {
         position: absolute;
         right: 5em;
         max-width: 21em;
+    }
+    #description {
+        max-width: 70%;
+    }
+    #carPage {
+        margin-left: 5%;
     }
 }
 @media screen and (min-width: 1786px){
