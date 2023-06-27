@@ -10,7 +10,9 @@
         <script src="/js/bootstrap.bundle.min.js" defer></script>
     </head>
     <body>
-        <header id="Header"><!--Début du header-->
+        <!--Début du header-->
+        <header id="Header">
+            <!--Début block info-->
             <div class="d-flex" id="headerPrincipal">
                 <div class="col-lg-2 col-md-3 d-none d-md-block pt-3">
                     <h1><strong>CLUB AUTO</strong></h1>
@@ -44,6 +46,9 @@
                     </div>
                 </div>
             </div>
+            <!--Fin block info-->
+
+            <!--Début barre de navigation-->
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md pt-3 pb-3" style="justify-content: flex-end">
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
@@ -59,9 +64,12 @@
                     </nav>
                 </nav>
             </div>
-        </header><!--Fin du Header-->
-        
-        <main id="contenuPrincipal"><!--Début du contenu principal-->
+            <!--Fin barre de navigation-->
+        </header>
+        <!--Fin du Header-->
+
+        <!--Début du contenu principal-->
+        <main id="contenuPrincipal">
             <div id="formulaire"></div>
             <div class="container">    
                 <div id="frmContact">    
@@ -100,9 +108,11 @@
             </div>
         </main>
         <!--Fin du contenu principal-->
-
-        <footer id="footer"> <!--Début du footer-->
+        
+        <!--Début du footer-->
+        <footer id="footer"> 
             <div>
+                <!--Infos entreprise-->
                 <div>
                     <h6 class="blanc"><strong><span class="blue">CLUB</span> AUTO</strong></h6>
                     <p class="gris pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ut, labore enim perferendis consequatur adipisci consequuntur molestiae quibusdam rem.</p>  
@@ -110,23 +120,28 @@
                 <div>
                     <h6 class="blanc pt-2"><strong>HORAIRE D'OUVERTURE</strong></h6>
                     <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
-                    <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</p>               
+                    <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</span></p>               
                 </div>
+                <!--Fin infos entreprise-->
+
+                <!--Partie newsletter-->
                 <div>
                     <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
                     <div class="form-group">
                         <div class="input-group">
-                        <input type="text" class="form-control pt-1" placeholder="Entrez votre email"/>
+                        <input id="newsletter" type="text" class="form-control pt-1" placeholder="Entrez votre email">
                         <div class="input-group-append"> 
                         <span class="input-group-text nlForm">
-                            <img src="/images/newsletterIcon.png" alt="Icone de wifi"/>
+                            <img src="/images/newsletterIcon.png" alt="Icone de wifi">
                         </span>
                         </div>
                         </div>
                     </div>
-                    <!--<input type="text" name="newsletter" id="newsletter" required placeholder="Entrez votre email" title="Entrez votre email">-->
                     <p class="gris">Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
+                <!--Fin newsletter-->
+
+                <!--Partie reseaux sociaux-->
                 <div>
                     <h6 class="blanc"><strong>RESEAUX SOCIAUX</strong></h6>
                     <div id="reseauxIc">
@@ -137,9 +152,10 @@
                         <img src="/images/youtubeIcon.png" alt="Icone de Youtube">
                     </div>
                 </div>
+                <!--Finpartie reseaux sociaux-->
             </div>
             <p id="finFooter" class="gris">Copyright &copy; Club Auto - Tous droits réservés</p>
-            
-        </footer> <!--Fin du footer-->
+        </footer> 
+        <!--Fin du footer-->
     </body>
 </html>

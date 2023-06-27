@@ -10,7 +10,9 @@
         <script src="/js/bootstrap.bundle.min.js" defer></script>
     </head>
     <body>
-        <header id="Header"><!--Début du header-->
+        <!--Début du header-->
+        <header id="Header">
+            <!--Début block info-->
             <div class="d-flex" id="headerPrincipal">
                 <div class="col-lg-2 col-md-3 d-none d-md-block pt-3">
                     <h1><strong>CLUB AUTO</strong></h1>
@@ -44,6 +46,9 @@
                     </div>
                 </div>
             </div>
+            <!--Fin block info-->
+
+            <!--Début barre de navigation-->
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md pt-3 pb-3" style="justify-content: flex-end">
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
@@ -53,152 +58,162 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
-                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
-                            <li class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
+                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
                         </ul>
                     </nav>
                 </nav>
             </div>
-        </header><!--Fin du Header-->
-        
-        <main id="contenuPrincipal" class="test md-container"><!--Début du contenu principal-->
+            <!--Fin barre de navigation-->
+        </header>
+        <!--Fin du Header-->
+
+        <!--Début du contenu principal-->        
+        <main id="contenuPrincipal" class="test md-container">
+            <!--Titre-->
             <div id="location">
                 <h2><strong>LOCATION</strong></h2>
             </div>
+            <!--Fin titre-->
             <div class="row">
-            <aside id="cadreRecherche" class="container col-md-5"><!--Partie recherche de droite de la page-->
-                <div class="row">
-                        <img class="col-4 iconCar" src="/images/icone-voiture.png" alt="incone de la recherche voiture"> 
-                        <p class="col-6"><strong>Rechercher</strong></p>
-                </div>
-                <ul>
-                    <li>
-                        <select name="type" id="type">
-                            <option value="Type">Type</option>
-                            <option value="Essence">Manuelle</option>
-                            <option value="Diesel">Automatique</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select name="carburant" id="carburant">
-                            <option value="Carburant">Carburant</option>
-                            <option value="Essence">Essence</option>
-                            <option value="Diesel">Diesel</option>
-                            <option value="Électrique">Électrique</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select name="marque" id="marque">
-                            <option value="Marque">Marque</option>
-                            <option value="Peugeot">Peugeot</option>
-                            <option value="Renault">Renault</option>
-                            <option value="Volkswagen">Volkswagen</option>
-                            <option value="Audi">Audi</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select name="modele" id="modele">
-                            <option value="Modèle">Modèle</option>
-                            <option value="3008">3008</option>
-                            <option value="208">208</option>
-                            <option value="Clio">Clio</option>
-                            <option value="Megane">Megane</option>
-                            <option value="Golf">Golf</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select name="kilomètre" id="kilomètre">
-                            <option value="Kilométrage maximal">Kilométrage maximal</option>
-                            <option value="10000">10000</option>
-                            <option value="30000">30000</option>
-                            <option value="50000">50000</option>
-                            <option value="100000">100000</option>
-                        </select>
-                    </li>
-                    <li>
-                        <select name="ancienneté" id="ancienneté">
-                            <option value="Ancienneté">Ancienneté</option>
-                            <option value="1 an">1 an</option>
-                            <option value="3 ans">3 ans</option>
-                            <option value="5 ans">5 ans</option>
-                            <option value="10 ans">10 ans</option>
-                        </select>
-                    </li>
-                </ul>
-                <label for="customRange1" class="form-label"><strong>Prix</strong></label>
-                <input type="range" class="form-range" id="customRange1">
-                <button class="btn btn-primary"><strong>réinitialiser</strong></button>  
-                
-                <!--Ajouter la barre de filtre + le bouton reinitialiser-->
-            </aside><!--Fin de la partie recherche-->
-            <section id="venteVoiture" class="col-md-8"><!--Contenu de gauche de la page-->
-                <div id="choix">
-                    <label class="d-none d-md-block" for="tri">ORDRE : </label> 
-                    <select name="tri" id="tri">
-                        <option value="Prix croissant">Prix croissant</option>
-                        <option value="Prix décroissant">Prix décroissant</option>
-                    </select>
-                </div>
-                <div style="margin: 2em 2em 1em 1em">
-                    <div class="listCar">
-                        <figure class="row">
-                            <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                            <figcaption class="container col-md-8">
-                                <div class="row">
-                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
-                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>   
-                    <div class="listCar">
-                        <figure class="row">
-                            <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                            <figcaption class="container col-md-8">
-                                <div class="row">
-                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
-                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                                </div>
-                            </figcaption>
-                        </figure>
+                <!--Début block recherche-->
+                <aside id="cadreRecherche" class="container col-md-5">
+                    <div class="row">
+                            <img class="col-4 iconCar" src="/images/icone-voiture.png" alt="incone de la recherche voiture"> 
+                            <p class="col-6"><strong>Rechercher</strong></p>
                     </div>
-                    <div class="listCar">
-                        <figure class="row">
-                            <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                            <figcaption class="container col-md-8">
-                                <div class="row">
-                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
-                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                                </div>
-                            </figcaption>
-                        </figure>
+                    <ul>
+                        <li>
+                            <select name="type" id="type">
+                                <option value="Type">Type</option>
+                                <option value="Essence">Manuelle</option>
+                                <option value="Diesel">Automatique</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="carburant" id="carburant">
+                                <option value="Carburant">Carburant</option>
+                                <option value="Essence">Essence</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Électrique">Électrique</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="marque" id="marque">
+                                <option value="Marque">Marque</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Audi">Audi</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="modele" id="modele">
+                                <option value="Modèle">Modèle</option>
+                                <option value="3008">3008</option>
+                                <option value="208">208</option>
+                                <option value="Clio">Clio</option>
+                                <option value="Megane">Megane</option>
+                                <option value="Golf">Golf</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="kilomètre" id="kilomètre">
+                                <option value="Kilométrage maximal">Kilométrage maximal</option>
+                                <option value="10000">10000</option>
+                                <option value="30000">30000</option>
+                                <option value="50000">50000</option>
+                                <option value="100000">100000</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="ancienneté" id="ancienneté">
+                                <option value="Ancienneté">Ancienneté</option>
+                                <option value="1 an">1 an</option>
+                                <option value="3 ans">3 ans</option>
+                                <option value="5 ans">5 ans</option>
+                                <option value="10 ans">10 ans</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <label for="customRange1" class="form-label"><strong>Prix</strong></label>
+                    <input type="range" class="form-range" id="customRange1">
+                    <button class="btn btn-primary"><strong>réinitialiser</strong></button>  
+                </aside>
+                <!--Fin du block recherche-->
+
+                <!--Début liste voiture-->
+                <section id="venteVoiture" class="col-md-8">
+                    <div id="choix">
+                        <label class="d-none d-md-block" for="tri">ORDRE : </label> 
+                        <select name="tri" id="tri">
+                            <option value="Prix croissant">Prix croissant</option>
+                            <option value="Prix décroissant">Prix décroissant</option>
+                        </select>
                     </div>
-                    <div class="listCar">
-                        <figure class="row">
-                            <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
-                            <figcaption class="container col-md-8">
-                                <div class="row">
-                                    <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
-                                    <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
-                                    <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
-                                    <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
-                                </div>
-                            </figcaption>
-                        </figure>
+                    <div style="margin: 2em 2em 1em 1em">
+                        <div class="listCar">
+                            <figure class="row">
+                                <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                                <figcaption class="container col-md-8">
+                                    <div class="row">
+                                        <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                        <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                        <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                        <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>   
+                        <div class="listCar">
+                            <figure class="row">
+                                <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                                <figcaption class="container col-md-8">
+                                    <div class="row">
+                                        <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                        <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                        <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                        <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="listCar">
+                            <figure class="row">
+                                <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                                <figcaption class="container col-md-8">
+                                    <div class="row">
+                                        <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                        <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                        <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                        <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="listCar">
+                            <figure class="row">
+                                <a class="col-md-4" href="Vehicules.html"><img src="/images/vehicule2.jpg" alt="image d'un vehicule"></a>
+                                <figcaption class="container col-md-8">
+                                    <div class="row">
+                                        <h3 class="col-6"><Strong>BMW 535i, Navi, Leather, ABS</Strong></h3>
+                                        <button class="btn btn-primary offset-2 col-4 buttonPrice"><strong>20€/jour</strong></button>
+                                        <p class="gris col-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A debitis incidunt illum voluptate molestias, sed vel optio sit blanditiis molestiae exercitationem sint ex beatae dolorem laborum ea totam quas voluptatem eveniet maiores suscipit. Blanditiis, quas quia!</p>
+                                        <a href="Vehicules.html"><p class="noir">&gt;&gt; En savoir plus &lt;&lt;</p></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-            </section><!--Fin du contenu de gauche-->
-        </div>
+                </section>
+                <!--Fin liste voiture-->
+            </div>
         </main><!--Fin du contenu principal-->    
         
-        <footer id="footer"> <!--Début du footer-->
+        <!--Début du footer-->
+        <footer id="footer"> 
             <div>
+                <!--Infos entreprise-->
                 <div>
                     <h6 class="blanc"><strong><span class="blue">CLUB</span> AUTO</strong></h6>
                     <p class="gris pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ut, labore enim perferendis consequatur adipisci consequuntur molestiae quibusdam rem.</p>  
@@ -208,6 +223,9 @@
                     <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
                     <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</span></p>               
                 </div>
+                <!--Fin infos entreprise-->
+
+                <!--Partie newsletter-->
                 <div>
                     <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
                     <div class="form-group">
@@ -220,9 +238,11 @@
                         </div>
                         </div>
                     </div>
-                    <!--<input type="text" name="newsletter" id="newsletter" required placeholder="Entrez votre email" title="Entrez votre email">-->
                     <p class="gris">Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
+                <!--Fin newsletter-->
+
+                <!--Partie reseaux sociaux-->
                 <div>
                     <h6 class="blanc"><strong>RESEAUX SOCIAUX</strong></h6>
                     <div id="reseauxIc">
@@ -233,9 +253,10 @@
                         <img src="/images/youtubeIcon.png" alt="Icone de Youtube">
                     </div>
                 </div>
+                <!--Finpartie reseaux sociaux-->
             </div>
             <p id="finFooter" class="gris">Copyright &copy; Club Auto - Tous droits réservés</p>
-            
-        </footer> <!--Fin du footer-->
+        </footer> 
+        <!--Fin du footer-->
     </body>
 </html>

@@ -10,7 +10,9 @@
         <script src="/js/bootstrap.bundle.min.js" defer></script>
     </head>
     <body>
-        <header id="Header"><!--Début du header-->
+        <!--Début du header-->
+        <header id="Header">
+            <!--Début block info-->
             <div class="d-flex" id="headerPrincipal">
                 <div class="col-lg-2 col-md-3 d-none d-md-block pt-3">
                     <h1><strong>CLUB AUTO</strong></h1>
@@ -44,6 +46,9 @@
                     </div>
                 </div>
             </div>
+            <!--Fin block info-->
+
+            <!--Début barre de navigation-->
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md pt-3 pb-3" style="justify-content: flex-end">
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
@@ -53,30 +58,37 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
-                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
-                            <li class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
+                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
                         </ul>
                     </nav>
                 </nav>
             </div>
-        </header><!--Fin du Header-->
-        
-        <main id="carPage"><!--Début du contenu principal-->
+            <!--Fin barre de navigation-->
+        </header>
+        <!--Fin du Header-->
+
+        <!--Début du contenu principal-->       
+        <main id="carPage">
+            <!--Fil d'arianne-->
             <nav id="filArianne">
             <p class="gris"><a href="/index.html">ACCUEIL</a> / <a href="/vente.html">VENTE</a> / BMW 535i, Navi, Leather, ABS</p>
             </nav>
+            <!--Fin fil d'arianne-->
+
+            <!--Début article voiture-->
             <div id="description">
                 <h2><strong>BMW 535i, Navi, Leather, ABS</strong></h2>
                 <figure>
                     <img src="/images/vehicule2.jpg" alt="image de voiture seule">
-                    <figcaption id="onglet"><!--Ajouter une classe pour les onglet-->
-                        <ul class="nav nav-tabs ongletDesc"><!--Ajouter une classe pour les onglet-->
+                    <figcaption id="onglet">
+                        <ul class="nav nav-tabs ongletDesc">
                             <li class="nav-item p-2 col-12 col-md-3"><a class="nav-link" aria-current="page" href="#"><strong>DESCRIPTION</strong></a></li>
                             <li class="nav-item p-2 col-12 col-md-3"><a class="nav-link" aria-current="page" href="#"><strong>TECHNIQUE</strong></a></li>
                             <li class="nav-item p-2 col-12 col-md-3"><a class="nav-link" aria-current="page" href="#"><strong>OPTIONS</strong></a></li>
                             <li class="nav-item p-2 col-12 col-md-3"><a class="nav-link" aria-current="page" href="#"><strong>CONTACT</strong></a></li>
                         </ul>
-                            <div id="textDesc"><!--Ajouter un style-->
+                            <div id="textDesc">
                                 <p class="noir">Lorem ipsum dolor sit amet consectetur adipisicing elit. In repudiandae fugiat aspernatur tenetur minima provident inventore tempora nesciunt ipsa aperiam, voluptate ducimus veritatis dolore repellendus? Perferendis, quae?</p>
                                 <p class="noir">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, commodi soluta. Ad perferendis officia aperiam nesciunt non libero ipsum laborum esse numquam facere cupiditate atque fuga aliquam neque, magnam a est, saepe nulla autem? Harum iusto, laudantium perferendis adipisci debitis sint quo, voluptate modi soluta optio tempore autem temporibus. Similique nemo id magni quos tempore, quam in deleniti blanditiis ea perferendis totam sit impedit quas officia perspiciatis voluptate! Nam excepturi atque reiciendis ut saepe at optio sed voluptas quisquam exercitationem magni recusandae ad dolorem sint mollitia amet vero cum nobis, qui ullam distinctio consectetur asperiores perferendis minus! Atque, deserunt? Eligendi corrupti, quasi molestiae, provident facere quod error deleniti obcaecati neque illum eos? Sequi odio consequatur dolorum est, eveniet aliquid nihil aliquam quidem ipsam vero?</p>
                                 <blockquote class="gris"><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto deserunt nihil a odio magnam? Eveniet eum consequatur vel atque exercitationem reiciendis et. Autem, provident atque!</em></blockquote>
@@ -92,11 +104,14 @@
                     </figcaption>
                 </figure>
             </div>
-        </main><!--Fin du contenu principal-->
+            <!--Fin article voiture-->
+        </main>
+        <!--Fin du contenu principal-->
         
-
-        <footer id="footer"> <!--Début du footer-->
+        <!--Début du footer-->
+        <footer id="footer"> 
             <div>
+                <!--Infos entreprise-->
                 <div>
                     <h6 class="blanc"><strong><span class="blue">CLUB</span> AUTO</strong></h6>
                     <p class="gris pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ut, labore enim perferendis consequatur adipisci consequuntur molestiae quibusdam rem.</p>  
@@ -106,6 +121,9 @@
                     <p class="gris pt-2"><strong>lundi - Samedi : </strong><span class="blanc">09:00 - 19:00</span></p>
                     <p class="gris"><strong>Dimanche et jours fériés : </strong><span class="blanc">Fermé</span></p>               
                 </div>
+                <!--Fin infos entreprise-->
+
+                <!--Partie newsletter-->
                 <div>
                     <label for="newsletter" class="blanc"><strong>NEWSLETTER</strong></label><br>
                     <div class="form-group">
@@ -118,9 +136,11 @@
                         </div>
                         </div>
                     </div>
-                    <!--<input type="text" name="newsletter" id="newsletter" required placeholder="Entrez votre email" title="Entrez votre email">-->
                     <p class="gris">Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
+                <!--Fin newsletter-->
+
+                <!--Partie reseaux sociaux-->
                 <div>
                     <h6 class="blanc"><strong>RESEAUX SOCIAUX</strong></h6>
                     <div id="reseauxIc">
@@ -131,10 +151,10 @@
                         <img src="/images/youtubeIcon.png" alt="Icone de Youtube">
                     </div>
                 </div>
+                <!--Finpartie reseaux sociaux-->
             </div>
             <p id="finFooter" class="gris">Copyright &copy; Club Auto - Tous droits réservés</p>
-            
-        </footer> <!--Fin du footer-->
+        </footer> 
+        <!--Fin du footer-->
     </body>
-
 </html>
