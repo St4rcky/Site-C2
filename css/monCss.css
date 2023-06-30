@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
 
+.imgCut {
+    max-height: 900px;
+    overflow: hidden;
+}
 body {
     font-family: "open sans";
     padding: 3% 3%;
     margin: 0;
 }
 #menuToggle {
-    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    padding-top: 1em;
 }
 img {
     max-width: 100%;
@@ -30,14 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 .orange.titre {
     font-size: 1em;
 }
-#headerPrincipal {
-    background-color: #232628;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    height: 86px;
-    font-family: montserrat;
-    color: #232628;
-}
+
 #headerPrincipal p, address {
     font-size: 0.7em;
 }
@@ -53,10 +54,13 @@ address {
     padding: 5px;
 }
 .barreDeLien {
-    position: absolute;
-    width: 94%;
-    height: 5%;
+    background-color:#232628;
+    display: none;
 }
+.bgNav {
+    background-color: #CC6119;
+}
+
 .barreDeLien ul {
     padding-right: 20em;
 }
@@ -109,7 +113,9 @@ section > h2 {
     background-repeat: no-repeat;
     background-size: 15px 15px;
     padding-left: 2em;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
+    background-origin:padding-box;
+    background-position: 0 30%;
 }
 #colorPart {
     background: url(/images/vente-location.jpg) ;
@@ -406,13 +412,35 @@ a {
     padding-bottom: 10px; 
     list-style: none;
 }
-
+#Header {
+    background-color: #232628;
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    height: 86px;
+    font-family: montserrat;
+    color: #232628;
+}
 @media screen and (min-width: 768px){
     #contenuPrincipal section h2 {
         padding-left: 4em;
     }
+    #Header {
+        display: block;
+    }
+    #headerPrincipal {
+        background-color: #232628;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        height: 86px;
+        font-family: montserrat;
+        color: #232628;
+    }
     #Header #headerPrincipal h1 {
         padding-left: 0em;
+    }
+    #Header div nav {
+        padding-top: 0;
+
     }
     #firstPart {
         max-width: 80%;
@@ -449,6 +477,12 @@ a {
     }
     #carPage {
         margin-left: 5%;
+    }
+    #menuToggle {
+        display: none;
+    }
+    .barreDeLien {
+        background-color: #ffffff77;
     }
 }
 @media screen and (min-width: 1786px){

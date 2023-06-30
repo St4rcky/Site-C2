@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/monCss.css">
         <script src="/js/bootstrap.bundle.min.js" defer></script>
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/menu.js"></script>
     </head>
     <body>
         <!--Début du header-->
@@ -45,23 +47,22 @@
                         <img src="/images/twitterIcon.png" alt="icone Twitter">
                     </div>
                 </div>
+                
             </div>
+            <button id="menuToggle"><img src="/images/hamburger(1).png" alt="bouton hamburger"></button>
             <!--Fin block info-->
-            
+
             <!--Début barre de navigation-->
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-md pt-3 pb-3" style="justify-content: flex-end">
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenuNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <nav class="collapse navbar-collapse barreDeLien" id="contenuNav">
+            <div>
+                <nav class="navbar navbar-expand-md" style="justify-content: flex-end;">
+                    <div class="navbar-collapse barreDeLien">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
-                            <li class="nav-item"><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
-                            <li class="nav-item"><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
-                            <li style="background-color: #CC6119;" class="nav-item"><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
+                            <li class="bgNav"><a class="nav-link" href="index.html" title="Page d'acceuil du site Club Auto"><strong>ACCUEIL</strong></a></li>
+                            <li><a class="nav-link" href="Vente.html" title="Recherchez votre voiture à acheter"><strong>VENTE</strong></a></li>
+                            <li><a class="nav-link" href="Location.html" title="Rechercher votre voiture à louer"><strong>LOCATION</strong></a></li>
+                            <li><a class="nav-link" href="Contact.html" title="Venez nous poser vos questions"><strong>CONTACT</strong></a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </nav>
             </div>
             <!--Fin barre de navigation-->
@@ -70,10 +71,9 @@
 
         <!--Début du contenu principal-->        
         <main id="contenuPrincipal">
-            <div class="container-fluid ps-0 pe-0">
-                <div class="container-fluid ps-0 pe-0">
-                <img src="/images/vehicule1.jpg" alt="image d'un parc à voiture" class="d-none d-md-block img-fluid" style="width: 100%;" id="photoEnTete"/>
-                </div>
+            <div class="container-fluid ps-0 pe-0 imgCut">
+            
+                <img src="/images/vehicule1.jpg" alt="image d'un parc à voiture" class="d-none d-md-block img-fluid" style="width: 100%;" id="photoEnTete">
             </div>
             <section>
                 <h2 class="pt-3 pb-3"><strong>CLUB AUTO <span class="orange">LE MEILLEUR DE L'AUTOMOBILE</span></strong></h2>
@@ -134,7 +134,7 @@
                                     <p><strong>LEATHER, ABS</strong></p>
                                     </div>
                                     <button class="btn btn-primary">
-                                        <p class="m-0"><strong>5 500€</strong></p>
+                                        <span class="m-0"><strong>5 500€</strong></span>
                                     </button>
                                 </figcaption>
                             </figure>
@@ -148,7 +148,7 @@
                                         <P><STRONG>LINE BODY KIT</STRONG></P>
                                     </div>
                                     <button class="btn btn-primary">
-                                        <p class="m-0"><strong>5 500€</strong></p>
+                                        <span class="m-0"><strong>5 500€</strong></span>
                                     </button>
                                 </figcaption>
                             </figure>
@@ -160,8 +160,9 @@
                                     <p><strong>FORD EXPLORER 2015</strong></p>
                                     <p><strong>4WD</strong></p>
                                     <button class="btn btn-primary boutonDouble">
-                                        <p class="m-0"><del>9 000€</del></p>
-                                        <p><strong>8 200€</strong></p>
+                                        <span class="m-0"><del>9 000€</del></span><br>
+                                        <span><strong>8 200€</strong></span>
+                                    </button>
                                 </figcaption>
                             </figure>
                         </div>
